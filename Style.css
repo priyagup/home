@@ -1,0 +1,522 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+header {
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+   padding: 34px 20px 43px;
+  
+        margin-left: -6px;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    display: inline-block;
+   
+}
+
+
+body{
+	background-color: pink;
+	    background-repeat: no-repeat;
+	    background-size: 100%;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.nav{
+
+  font-family: 'PT Serif', serif;
+  top: 50px;
+  white-space: pre;
+  color: #7ab1cc;
+  font-style:italic;
+  margin-top: 40px;
+  font-size: 0.95em;
+  line-height: .5em;
+ 
+}
+.nav a{
+	color: #7ab1cc;
+	
+}
+.home{
+	font-size: 2.00em;
+	color: #000000;
+	margin-left:240px;
+}
+
+a:link{
+	 text-decoration:none;
+}
+a:hover{
+	 color: #808080; 
+	 transition: opacity 0.3s;
+}
+.logoplace{
+	    margin-left: 302px;
+    padding: 7px 0px 1px;
+}
+
+.card-container {
+ cursor: pointer;
+    perspective: 600;
+    position: relative;
+    margin-top: -18px;
+    width: 80px;
+    height: 42px;
+    margin-left: 751px;
+   
+}
+.card {
+  height: 100%;
+  position: absolute;
+  opacity: 0.5; 
+  filter: Alpha(opacity=50);
+  width: 100%;
+}
+.card:hover {
+ opacity: 1.0; 
+  filter: Alpha(opacity=50)
+}
+.card .github {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  margin-left: 17px;
+}
+
+
+.logo {
+	height:42px;
+}
+.linkedln {
+	     margin-top: -42px;
+    width: 80px;
+    height: 42px;
+    margin-left: 809px;
+
+}
+.card-container2 {
+ cursor: pointer;
+    perspective: 600;
+    position: relative;
+    margin-top: -42px;
+    width: 77px;
+    height: 42px;
+    margin-left: 831px;
+   
+}
+.card2 {
+  height: 100%;
+  position: absolute;
+  opacity: 0.5; 
+  filter: Alpha(opacity=50);
+  width: 100%;
+}
+.card2:hover {
+ opacity: 1.0; 
+  filter: Alpha(opacity=50);
+}
+
+.linkedln .logo{
+	height:58px;
+}
+
+.card2 .linkedln {
+ backface-visibility: hidden;
+    border-radius: 6px;
+    height: 130%;
+    position: absolute;
+    overflow: hidden;
+    width: 72%;
+    margin-top: -9%;
+    margin-left: 8%;
+}
+
+.stackoverflow {
+	margin-top: -23px; 
+    width: 47px; height:42px;
+}
+.card-container3 {
+ cursor: pointer;
+    perspective: 600;
+    position: relative;
+    margin-top: -42px;
+    width: 77px;
+    height: 42px;
+    margin-left: 911px;
+   
+}
+.card3 {
+  height: 100%;
+  position: absolute;
+  opacity: 0.5; 
+  filter: Alpha(opacity=50);
+  width: 100%;
+}
+.card3:hover {
+  opacity: 1.0; 
+  filter: Alpha(opacity=50);
+}
+.card3 .stackoverflow {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 56%;
+  margin-top: 0%;
+    margin-left: 3%;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.resume {
+	     margin-top: -42px;
+    width: 80px;
+    height: 42px;
+    margin-left: 809px;
+
+}
+.card-container4 {
+    cursor: pointer;
+    perspective: 600;
+    position: relative;
+    margin-top: -34px;
+    width: 77px;
+    height: 42px;
+    margin-left: 987px;
+   
+}
+.card4 {
+  height: 100%;
+  position: absolute;
+  opacity: 0.5; 
+  filter: Alpha(opacity=50);
+  width: 100%;
+}
+.card4:hover {
+ opacity: 1.0; 
+  filter: Alpha(opacity=50);
+}
+
+.resume .logo{
+	height:44px;
+}
+
+.card4 .resume {
+ backface-visibility: hidden;
+    border-radius: 6px;
+    height: 130%;
+    position: absolute;
+    overflow: hidden;
+    width: 72%;
+    margin-top: -9%;
+    margin-left: 8%;
+}
+
+
+
+
+/* 
+________________________________________________________________ */
+
+.typeintro{
+	
+	margin-top: 10%;
+    /* width: 50%; */
+    /* height: 100%; */
+    margin-left: 20%;
+    display: flex;
+}
+
+.typeintro h1 {
+ 
+    
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;  /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing1 3.5s steps(30, end),
+ blink-caret1 .5s step-end infinite;
+    margin-top: 0%; /* Gives that scrolling effect as the typing happens */
+        height: 31px;	
+}
+
+/* The typing effect */
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 15% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret1 {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+.me{
+	       border-radius: 66%;
+    width: 13em;
+    /* padding: 0em 2em; */
+    /* float: left; */
+    /* margin-top: -10px; */
+    height: 11em;
+}
+
+.start-button{
+	height: 30px;
+    width: 300px;
+    position: fixed;
+    margin: 72px 301px -102px;
+}
+.button {
+
+    padding: 11px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #7e000b;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 11px 6px #d06f7d;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.name-block-container{
+border: 1px solid rgba(51, 51, 51, 0.4);
+transform: rotate(-34deg);
+    left: -190px;
+    top: 10px;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: table;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.name-block{
+	display: table-cell;
+    vertical-align: middle;
+    padding-left: 240px;
+    -ms-transform: rotate(34deg);
+    -webkit-transform: rotate(34deg);
+    transform: rotate(34deg);
+}
+
+
+.img .love{
+	width:40%;
+}
+
+
+#topbar {
+  background: #4f4a41;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  height: 13px;
+  overflow: hidden;
+  -webkit-transition: height 0.5s linear;
+  -moz-transition: height 0.5s linear;
+  transition: height 0.5s linear;
+  width:6%;
+}
+#topbar a {
+  color: #3feee6;
+  font-size:1.3em;
+  line-height: 1.25em;
+  text-decoration: none;
+  opacity: 0.5;
+  font-weight: bold;
+}
+#topbar a:hover {
+  opacity: 1;
+}
+ 
+#tophiddenbar {
+  display: block;
+  width: 100%;
+  background: #4f4a41;
+  color: #b09f82;
+  font-weight: bold;
+  padding: 17px 0; 
+  font-size: 1.3em;
+  text-align: center;
+  text-shadow: 1px 1px 0 #444;
+}
+#tophiddenbar a {
+  color: #fff;
+  font-size: 1.0em;
+  text-decoration: none;
+  opacity: 0.5;
+  text-shadow: none;
+}
+#tophiddenbar a:hover { opacity: 1; }
+ 
+#topbar:hover { height: 50px; }
+
+
+
+#screen1{
+	height: 300px;
+}
+.love-block {
+    position: absolute;
+    width: 348px;
+    height: 208px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: table;
+    transition: all 0.5s;
+    z-index: 1;
+        margin: 89px 227px;
+         left: 577px;
+    top: 89px;
+}
+.work-block {
+    position: absolute;
+    width: 348px;
+    height: 208px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: table;
+    transition: all 0.5s;
+    z-index: 1;
+        margin: 89px -144px;
+         left: 577px;
+    top: 89px;
+}
+.Education-block {
+    position: absolute;
+    width: 348px;
+    height: 208px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: table;
+    transition: all 0.5s;
+    z-index: 1;
+        margin: 89px -514px;
+         left: 577px;
+    top: 89px;
+}
+.menu-block:hover {
+    border: 15px solid rgba(255, 255, 255, 0.1);
+}
+.menu-block {
+    cursor: pointer;
+}
+.love {
+        vertical-align: middle;
+    text-align: center;  
+}
+.work {
+        vertical-align: middle;
+    text-align: center;  
+}
+.Education {
+        vertical-align: middle;
+    text-align: center;
+}
+.menu-item::after, ::before {
+    box-sizing: inherit;
+}
+h2.menu-item {
+    position: relative;
+    color: #FFF;
+    margin: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    transition: all 1s ease-out;
+}
+h2 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+/* ______________________________________________________ */
+
+/* Articles  */
+
+.myself h2{
+	font-size: 33px;
+	color: #FFF;
+    line-height: 26px;
+    margin-top: 106px;
+    margin-left: 439px;
+    position: relative;
+}
+
+.master-bachelor {
+   display: block;
+    width: 50vw;
+    height: 75px;
+    margin-top: 220px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: Helvetica, sans-serif;
+    margin-left: 42px;
+}
+.column {
+    float: left;
+    width: 48%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+   
+}
+.column p{
+	
+	  font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: "Roboto";
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+hr{ 
+     border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.3);   
+}
+
+/* 
+_____________________________________________________________ */
+  footer{
+    position: relative;
+        height: 400px;
+        width: 100%;
+    }
+
+    p.copyright {
+        position: absolute;
+        width: 100%;
+        color: #fff;
+        line-height: 40px;
+        font-size: 1.1em;
+        text-align: center;
+        bottom:0;
+    }

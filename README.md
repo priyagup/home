@@ -1,3 +1,3 @@
 # priyagupta.github.io
 
-Converting to React App
+Converting to Angular App
